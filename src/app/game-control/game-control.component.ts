@@ -22,4 +22,10 @@ export class GameControlComponent implements OnInit {
     }, 1000);
   }
 
+  onPause(){
+clearInterval(this.interval);
+this.lastNamber = 0;
+  }
+
+
 }
